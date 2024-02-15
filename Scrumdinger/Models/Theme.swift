@@ -9,8 +9,6 @@ import SwiftUI
 
 
 enum Theme: String {
-    
-    
     case bubblegum
     case buttercup
     case indigo
@@ -27,7 +25,7 @@ enum Theme: String {
     case tan
     case teal
     case yellow
-
+    
     var accentColor: Color {
         switch self {
         case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
@@ -35,7 +33,7 @@ enum Theme: String {
             
         }
     }
-
+    
     var mainColor: Color {
         Color(rawValue)
     }
