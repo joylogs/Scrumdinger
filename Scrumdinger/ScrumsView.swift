@@ -13,9 +13,8 @@ struct ScrumsView: View {
     var body: some View {
         NavigationStack {
             List(scrums, id: \.title) { scrum in
-                NavigationLink(destination: Text(scrum.title)) {
+                NavigationLink(destination: DetailView(scrum: scrum)) {
                     CardView(scrum: scrum)
-                        .listRowBackground(scrum.theme.mainColor)
                 }
                 .listRowBackground(scrum.theme.mainColor)
             }
