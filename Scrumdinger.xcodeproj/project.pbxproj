@@ -59,6 +59,67 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		762C8C702B8672F0009CDAAA /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				7622FAB42B82481500431804 /* DetailEditView.swift */,
+				7622FAB22B80994E00431804 /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		762C8C712B86730D009CDAAA /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				765741552B83D03B00A6620F /* ThemeView.swift */,
+				765741572B83D15700A6620F /* ThemePicker.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		762C8C722B867324009CDAAA /* MeetingView */ = {
+			isa = PBXGroup;
+			children = (
+				768314792AAFF8A50063BE64 /* MeetingView.swift */,
+			);
+			path = MeetingView;
+			sourceTree = "<group>";
+		};
+		762C8C732B86733B009CDAAA /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				760D46FC2B7D3C13009F324B /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		762C8C742B867347009CDAAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				762C8C752B86735B009CDAAA /* ScrumsView */,
+				762C8C702B8672F0009CDAAA /* DetailView */,
+				762C8C732B86733B009CDAAA /* CardView */,
+				762C8C722B867324009CDAAA /* MeetingView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		762C8C752B86735B009CDAAA /* ScrumsView */ = {
+			isa = PBXGroup;
+			children = (
+				760D47002B7E4637009F324B /* ScrumsView.swift */,
+			);
+			path = ScrumsView;
+			sourceTree = "<group>";
+		};
+		762C8C762B86737F009CDAAA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				760D46FE2B7E1715009F324B /* LabelStyle.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		7683146B2AAFF8A50063BE64 = {
 			isa = PBXGroup;
 			children = (
@@ -78,18 +139,13 @@
 		768314762AAFF8A50063BE64 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
-				76023C1F2B4DB6B700470439 /* Models */,
 				768314772AAFF8A50063BE64 /* ScrumdingerApp.swift */,
-				768314792AAFF8A50063BE64 /* MeetingView.swift */,
-				760D46FC2B7D3C13009F324B /* CardView.swift */,
+				76023C1F2B4DB6B700470439 /* Models */,
+				762C8C712B86730D009CDAAA /* Theme */,
+				762C8C742B867347009CDAAA /* Views */,
+				762C8C762B86737F009CDAAA /* Helpers */,
 				7683147B2AAFF8A70063BE64 /* Assets.xcassets */,
 				7683147D2AAFF8A70063BE64 /* Preview Content */,
-				760D46FE2B7E1715009F324B /* LabelStyle.swift */,
-				760D47002B7E4637009F324B /* ScrumsView.swift */,
-				7622FAB22B80994E00431804 /* DetailView.swift */,
-				7622FAB42B82481500431804 /* DetailEditView.swift */,
-				765741552B83D03B00A6620F /* ThemeView.swift */,
-				765741572B83D15700A6620F /* ThemePicker.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
