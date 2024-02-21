@@ -9,8 +9,9 @@ import SwiftUI
 
 struct DetailView: View {
     
-    let scrum: DailyScrum
+    @Binding var scrum: DailyScrum
     
+    @State private var editingScrum = DailyScrum.emptyScrum
     @State private var isPresentingEditView = false
     
     var body: some View {
@@ -74,7 +75,7 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            DetailView(scrum: DailyScrum.sampleData[0])
+            DetailView(scrum: .constant(DailyScrum.sampleData[0]))
         }
     }
 }
