@@ -16,6 +16,9 @@ struct MeetingView: View {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(scrum.theme.mainColor)
             VStack {
+                MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed,
+                                                  secondsRemaining: scrumTimer.secondsRemaining,
+                                                  theme: scrum.theme)
                 ProgressView(value: 5, total: 15)
                 HStack {
                     VStack(alignment: .leading) {
