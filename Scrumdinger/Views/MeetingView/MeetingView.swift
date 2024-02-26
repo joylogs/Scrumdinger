@@ -10,7 +10,7 @@ import SwiftUI
 struct MeetingView: View {
     
     @Binding var scrum: DailyScrum
-//    @StateObject var scrumTimer = ScrumTimer()
+    @StateObject var scrumTimer = ScrumTimer()
     
     var body: some View {
         ZStack {
