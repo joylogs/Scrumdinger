@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct MeetingView: View {
     
@@ -18,26 +19,8 @@ struct MeetingView: View {
                 .fill(scrum.theme.mainColor)
             VStack {
                 MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed,
-                                                  secondsRemaining: scrumTimer.secondsRemaining,
-                                                  theme: scrum.theme)
-                ProgressView(value: 5, total: 15)
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Seconds Elapsed")
-                            .font(.caption)
-                        Label("300", systemImage: "hourglass.tophalf.fill")
-                    }
-                    Spacer()
-                    
-                    VStack(alignment: .trailing) {
-                        Text("Seconds Remaining")
-                            .font(.caption)
-                        Label("600", systemImage: "hourglass.bottomhalf.fill")
-                    }
-                }
-                .accessibilityElement(children: .ignore)
-                .accessibilityLabel("Time remaining")
-                .accessibilityValue("10 minutes")
+                                  secondsRemaining: scrumTimer.secondsRemaining,
+                                  theme: scrum.theme)
                 Circle()
                     .strokeBorder(lineWidth: 24)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
@@ -46,8 +29,9 @@ struct MeetingView: View {
         .padding()
         .foregroundColor(scrum.theme.accentColor)
         .onAppear {
-                    scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
-                }
+            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+            scrumTimer.startScrum()
+        }
         .onDisappear {
             scrumTimer.stopScrum()
         }
