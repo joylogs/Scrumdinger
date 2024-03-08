@@ -24,6 +24,7 @@
 		7683147A2AAFF8A50063BE64 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768314792AAFF8A50063BE64 /* MeetingView.swift */; };
 		7683147C2AAFF8A70063BE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7683147B2AAFF8A70063BE64 /* Assets.xcassets */; };
 		7683147F2AAFF8A70063BE64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7683147E2AAFF8A70063BE64 /* Preview Assets.xcassets */; };
+		7698AF8F2B9B6B080063B8FF /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698AF8E2B9B6B080063B8FF /* NewScrumSheet.swift */; };
 		76FB2B5E2B98E909003FEED6 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2B5D2B98E909003FEED6 /* AVPlayer+Ding.swift */; };
 		76FB2B602B98E91C003FEED6 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76FB2B5F2B98E91C003FEED6 /* ding.wav */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		768314792AAFF8A50063BE64 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		7683147B2AAFF8A70063BE64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7683147E2AAFF8A70063BE64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7698AF8E2B9B6B080063B8FF /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		76FB2B5D2B98E909003FEED6 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		76FB2B5F2B98E91C003FEED6 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				760D47002B7E4637009F324B /* ScrumsView.swift */,
+				7698AF8E2B9B6B080063B8FF /* NewScrumSheet.swift */,
 			);
 			path = ScrumsView;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				7622FAB32B80994E00431804 /* DetailView.swift in Sources */,
 				766390C22B8916BA0017FAC2 /* MeetingHeaderView.swift in Sources */,
 				7622FAB52B82481500431804 /* DetailEditView.swift in Sources */,
+				7698AF8F2B9B6B080063B8FF /* NewScrumSheet.swift in Sources */,
 				76023C212B4DB6CC00470439 /* Theme.swift in Sources */,
 				7683147A2AAFF8A50063BE64 /* MeetingView.swift in Sources */,
 				760D47012B7E4637009F324B /* ScrumsView.swift in Sources */,
