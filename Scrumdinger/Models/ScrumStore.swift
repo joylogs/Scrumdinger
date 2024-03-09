@@ -26,6 +26,11 @@ struct ScrumStore: ObservableObject {
             guard let data = try? Data(contentsOf: fileURL) else {
                 return []
             }
+            
+            let dailyScrums = try JSONDecoder().decode([DailyScrum].self, from: data)
+            return dailyScrums
         }
+        
+        let scrums = try await task.value
     }
 }
