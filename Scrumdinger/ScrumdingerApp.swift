@@ -14,7 +14,16 @@ struct ScrumdingerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ScrumsView(scrums: $store.scrums)
+            ScrumsView(scrums: $store.scrums) {
+                Task {
+                    do {
+                        
+                    }
+                    catch {
+                        
+                    }
+                }
+            }
                 .task {
                     do {
                         try await store.load()
