@@ -132,9 +132,9 @@
 				762C8C702B8672F0009CDAAA /* DetailView */,
 				762C8C732B86733B009CDAAA /* CardView */,
 				762C8C722B867324009CDAAA /* MeetingView */,
-				766913852BA8BF4D00477E0E /* ErrorView.swift */,
-				765105952BAA0CAD00F01BDC /* MeetingTimerView.swift */,
-				765105972BAA0EDD00F01BDC /* SpeakerArc.swift */,
+				765105992BAA108900F01BDC /* ErrorView */,
+				7651059A2BAA109F00F01BDC /* TimerView */,
+				7651059B2BAA10B000F01BDC /* ShapeView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +155,30 @@
 				760D46FE2B7E1715009F324B /* LabelStyle.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		765105992BAA108900F01BDC /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				766913852BA8BF4D00477E0E /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		7651059A2BAA109F00F01BDC /* TimerView */ = {
+			isa = PBXGroup;
+			children = (
+				765105952BAA0CAD00F01BDC /* MeetingTimerView.swift */,
+			);
+			path = TimerView;
+			sourceTree = "<group>";
+		};
+		7651059B2BAA10B000F01BDC /* ShapeView */ = {
+			isa = PBXGroup;
+			children = (
+				765105972BAA0EDD00F01BDC /* SpeakerArc.swift */,
+			);
+			path = ShapeView;
 			sourceTree = "<group>";
 		};
 		7683146B2AAFF8A50063BE64 = {
